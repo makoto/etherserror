@@ -16,7 +16,7 @@ async function main(){
     console.log("Result:", result);
   } catch (e) {
     console.log(e)
-    if (e.code === Logger.errors.CALL_EXCEPTION) {
+    if (e.code === 'SomeCustomError') {
       // If the error was SomeCustomError(), we can get the args...
       // if (e.errorName === "SomeCustomError") {
       //   // These are both the same; keyword vs positional.
